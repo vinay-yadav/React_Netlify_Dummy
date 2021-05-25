@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background: #000000bf;
+  display: flex;
+  justify-content: center;
+}
+
+.App-header ul {
+  list-style: none;
+  display: flex;
+}
+
+.App-header ul li {
+  font-size: 1.3rem;
+  flex: 1;
+  padding: 1rem 2rem;
+  font-variant: petite-caps;
+  font-weight: 600;
+}
+
+.App-header a {
+  text-decoration: none;
+  color: coral;
+}
