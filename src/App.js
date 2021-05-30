@@ -3,11 +3,17 @@ import Home from './components/Home/Home';
 import About from './components/AboutUs/AboutUs';
 import {Route} from "react-router";
 import {NavLink} from "react-router-dom";
+import Head from "next/head";
+import React from "react";
 
 function App() {
     return (
         <div>
             <div className="App">
+                <Head>
+                    <meta name="variant" content="vinay" />
+                    <title>Home</title>
+                </Head>
                 <header className="App-header">
                     <nav>
                         <ul>
