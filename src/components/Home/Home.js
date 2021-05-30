@@ -13,9 +13,16 @@ const home = props => {
 
     return (
         <div className={classes.Home}>
-            <h1>{props.children}</h1>
+            <h1>{props.children} {props.test ? "Master" : "Grader"}</h1>
         </div>
     );
+}
+
+
+const mapStateToProps  = state => {
+    return {
+        test: state.test
+    }
 }
 
 const mapDispatchToProps = dispatch => {
@@ -24,4 +31,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(home);
+export default connect(mapStateToProps, mapDispatchToProps)(home);
